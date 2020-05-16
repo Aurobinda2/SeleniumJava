@@ -1,0 +1,18 @@
+ImplicitWait:
+driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+This statement is applicable for all the findElement() and findElements() methods in the program. 
+
+b. EXPLICIT WAIT
+Explicit Wait is mainly useful to apply wait on a single element. 
+In order to achieve the Explicit Wait, we have to use a class called WebDriverWait. 
+AJAX calls are handled using explicit wait in selenium webdriver.
+
+WebDriverWait wait = new WebDriverWait(driver,30);
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(“”));
+wait.until(ExpectedConditions.isAlertPresent());
+wait.until(ExpectedConditions.textToBePresentElement(Expected,By.id(“”)));
+wait.until(ExpectedConditions.titleContains(“”));
+wait.until(ExpectedConditions.titleIs(“”));
+
+
+ 
